@@ -43,7 +43,9 @@ Rust для огрызков
         </section>
         <section id="resources">
             <h2>Ресурсы</h2>
-            <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Resources.jpg" alt="Ресурсы в Rust">
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330107353160486934/image.png?ex=678cc681&is=678b7501&hm=ca5d62c144172afdc84304546757225d31fb94db7de49041216da6fe148de1fb&" alt="Ресурсы в Rust">
+            </div>
             <p>Сбор ресурсов является ключевым элементом геймплея Rust. Игроки могут добывать дерево, камень, металлы и другие материалы, необходимые для строительства и изготовления предметов.</p>
             <h3>Дерево</h3>
             <p>Дерево - это основной ресурс, используемый для строительства и крафтинга. Игроки могут рубить деревья или собирать палки.</p>
@@ -53,7 +55,7 @@ Rust для огрызков
         <section id="crafting">
             <h2>Крафтинг</h2>
             <div class="image-container">
-                <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Crafting.jpg" alt="Крафтинг в Rust">
+                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1327580247192895518/image.png?ex=678c26b4&is=678ad534&hm=c0f540c939fb87de1c4f84d09d1010b95a235a9f68f85c6ae77287a6da4b9509&" alt="Крафтинг в Rust">
             </div>
             <p>Крафтинг - важная часть геймплея Rust. Игроки могут создавать оружие, инструменты, одежду и другие предметы, используя собранные ресурсы.</p>
             <h3>Инструменты</h3>
@@ -63,7 +65,9 @@ Rust для огрызков
         </section>
         <section id="buildings">
             <h2>Строительство</h2>
-            <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Building.jpg" alt="Строительство в Rust">
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f84379085d6d98c9faa3ebbf7814061fe8aba8a1516&" alt="Строительство в Rust">
+            </div>
             <p>Постройка базы - один из важнейших аспектов игры Rust. Игроки могут строить укрытия, крепости и даже автоматизированные башни для защиты своей территории.</p>
             <h3>Дома</h3>
             <p>Игроки начинают с постройки небольших деревянных домов, которые со временем можно улучшать до каменных или металлических строений.</p>
@@ -89,12 +93,7 @@ Rust для огрызков
         </section>
         <section id="community">
             <h2>Сообщество</h2>
-            <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Community.jpg" alt="Сообщество Rust">
-            <p>Сообщество Rust активно на различных платформах, начиная от форумов и заканчивая социальными сетями и стриминговыми сервисами. Игроки делятся своими достижениями, создают гайды и проводят турниры.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Эта страница создана фанатами для фанатов. Все материалы принадлежат их создателям.</p>
-    </footer>
-</body>
-</html>
+            <div class="image-container">
+                <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Community.jpg" alt="Сообщество Rust">
+            </div>
+            <p>Сообщество Rust активно на различных платформах, начиная от форумов и заканчивая социальными сетями и стриминговыми сервисами
