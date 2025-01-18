@@ -127,6 +127,3 @@
             <p>От дубинок и луков до огнестрельного оружия - игроки могут создавать различное оружие для защиты и нападения.</p>
         </section>
         <section id="buildings" class="container">
-            <h2>Строительство</h2>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f
