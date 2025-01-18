@@ -1,11 +1,70 @@
-Rust для огрызков
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rust – Вики о игре</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #ff0000;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1em;
+        }
+
+        nav ul li a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        h1, h2 {
+            color: #ff0000;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,14 +82,14 @@ Rust для огрызков
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="container">
             <h2>О игре</h2>
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1329516092191670292/image.png?ex=678c9a19&is=678b4899&hm=446f26cbb5bc241c7f256d3f2810229e62c6c005ab6fbc73f92f08b0644c274a&" alt="Скриншот геймплея Rust">
             </div>
             <p>Rust - многопользовательская онлайн-игра на выживание от компании Facepunch Studios. Игроки должны выжить в дикой природе, собирая ресурсы, строя укрытия и сотрудничая или соперничая с другими игроками. Игра вышла в ранний доступ в 2013 году и быстро завоевала популярность своей жёсткой механикой выживания.</p>
         </section>
-        <section id="gameplay">
+        <section id="gameplay" class="container">
             <h2>Геймплей</h2>
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1328826537763672074/image.png?ex=678c1227&is=678ac0a7&hm=b0b379555250e86f9bda02c46af8e7568231317510ffbd90738f07276daff128&" alt="Бой в Rust">
@@ -41,7 +100,7 @@ Rust для огрызков
             <h3>Боевые действия</h3>
             <p>Игроки могут сражаться с другими игроками или NPC, используя разнообразное оружие и ловушки. В PvP режимах важно уметь хорошо стрелять и прятаться.</p>
         </section>
-        <section id="resources">
+        <section id="resources" class="container">
             <h2>Ресурсы</h2>
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330107353160486934/image.png?ex=678cc681&is=678b7501&hm=ca5d62c144172afdc84304546757225d31fb94db7de49041216da6fe148de1fb&" alt="Ресурсы в Rust">
@@ -52,7 +111,7 @@ Rust для огрызков
             <h3>Металлы</h3>
             <p>Металлы, такие как железо и медь, используются для создания более прочных предметов и построек. Их можно добывать из рудников или собирать с помощью инструментов.</p>
         </section>
-        <section id="crafting">
+        <section id="crafting" class="container">
             <h2>Крафтинг</h2>
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1327580247192895518/image.png?ex=678c26b4&is=678ad534&hm=c0f540c939fb87de1c4f84d09d1010b95a235a9f68f85c6ae77287a6da4b9509&" alt="Крафтинг в Rust">
@@ -63,7 +122,7 @@ Rust для огрызков
             <h3>Оружие</h3>
             <p>От дубинок и луков до огнестрельного оружия - игроки могут создавать различное оружие для защиты и нападения.</p>
         </section>
-        <section id="buildings">
+        <section id="buildings" class="container">
             <h2>Строительство</h2>
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f84379085d6d98c9faa3ebbf7814061fe8aba8a1516&" alt="Строительство в Rust">
@@ -74,26 +133,9 @@ Rust для огрызков
             <h3>Оборонительные сооружения</h3>
             <p>Заборы, ловушки и автоматизированные турели - лишь часть арсенала для защиты базы от нападений.</p>
         </section>
-        <section id="tips">
+        <section id="tips" class="container">
             <h2>Советы для новичков</h2>
             <ul>
                 <li>Сначала постройте небольшое укрытие, чтобы защитить себя от дикой природы и других игроков.</li>
                 <li>Используйте костры, чтобы готовить еду и поддерживать тепло в холодные ночи.</li>
-                <li>Собирайте ресурсы и укрепляйте свой дом, чтобы защитить его от атак.</li>
-                <li>Изучайте карту и находите безопасные зоны для выживания.</li>
-                <li>Создавайте альянсы с другими игроками, чтобы вместе защищаться от врагов.</li>
-            </ul>
-        </section>
-        <section id="video">
-            <h2>Видео</h2>
-            <video controls>
-                <source src="https://cdn.discordapp.com/attachments/1314225469419294780/1328485043043176499/2025-01-13-230343893.mp4?ex=678c259c&is=678ad41c&hm=d7e3d5d731b0174a9e77c8313792b1da207ecdc4ef311b4e4b224373ee0c3f4b&" type="video/mp4">
-                Ваш браузер не поддерживает воспроизведение видео.
-            </video>
-        </section>
-        <section id="community">
-            <h2>Сообщество</h2>
-            <div class="image-container">
-                <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Community.jpg" alt="Сообщество Rust">
-            </div>
-            <p>Сообщество Rust активно на различных платформах, начиная от форумов и заканчивая социальными сетями и стриминговыми сервисами
+                <li>Собирайте ресурсы и укрепляйте свой дом,[_{{{CITATION{{{_1{](https://github.com/Victem/web-progr/tree/58eb47efb72c8f0de4401627b76d12f695e0fa42/src%2Fcss%2FREADME.MD)
