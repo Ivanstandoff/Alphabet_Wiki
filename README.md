@@ -3,294 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rust – Вики о игре</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Википедия о Rust</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth; /* Плавная прокрутка */
-        }
         body {
-            background: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330131442646388847/image.png?ex=678cdcf0&is=678b8b70&hm=dedd56087c729808020cb61c8e705b3dc64cbf61156f0514a4b142ad36ee1c2c') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            font-family: 'Fjalla One', Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: rgba(34, 34, 34, 0.9);
-            color: #ff0000;
-            padding: 1em 0;
+            font-family: 'Roboto', sans-serif;
+            color: white;
             text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 1em;
-        }
-        nav ul li a {
-            color: #ff0000;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #f1c40f;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1em;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            position: relative;
-            z-index: 1;
-            margin-bottom: 2em;
-        }
-        h1, h2 {
-            color: #ff0000;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 1em 0;
-            position: relative;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-        }
-        .image-container img:hover {
-            opacity: 1;
-        }
-        .hamburger {
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            margin: 20px;
-            position: relative;
-            z-index: 2;
-            display: none; /* Скрыть по умолчанию */
-        }
-        .line {
-            width: 100%;
-            height: 4px;
-            background-color: white;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        .side-panel {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(51, 51, 51, 0.9);
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-            z-index: 1;
-        }
-        .side-panel a {
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 22px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        .side-panel a:hover {
-            color: #f1c40f;
-        }
-        .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-            color: #fff;
-        }
-        .main-content {
-            padding-top: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1em 0;
-        }
-        table, th, td {
-            border: 1px solid #fff;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: rgba(34, 34, 34, 0.8);
+            overflow: auto;
+            background-image: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330182485333508216/image.png?ex=678d0c7a&is=678bbafa&hm=bb7bf5255dbd43905abd8bbdf4ab4d4ceba0a7e21345f9d86fd7c21386841a62');
+            background-size: cover;
+            background-attachment: fixed;
         }
 
-        /* Стили для бургер-меню */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none; /* Скрыть навигацию по умолчанию */
-                flex-direction: column;
-                background-color: rgba(34, 34, 34, 0.9);
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                z-index: 3;
-            }
-            nav ul.show {
-                display: flex; /* Показать навигацию при открытии */
-            }
-            .hamburger {
-                display: block; /* Показать бургер-меню на мобильных устройствах */
-            }
+        h1 {
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #ff5722; /* Ало-красный цвет */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+
+        .link:hover {
+            background-color: #e64a19;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-image {
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .category {
+            margin: 20px 0;
+        }
+
+        .category h2 {
+            margin: 10px 0;
+        }
+
+        .category img {
+            width: 80%; /* Уменьшение размера изображений */
+            height: auto;
+            margin: 10px 0;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer; /* Указатель при наведении */
+        }
+
+        .category img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Гамбургер меню */
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #ff5722;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .dev-section {
+            margin-top: 40px;
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 100px;
+            padding: 10px;
+            background-color: #ff5722; /* Ало-красный цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .language-switch:hover {
+            background-color: #e64a19;
+        }
+
+        @keyframes backgroundChange {
+            0% { background-image: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330182485333508216/image.png?ex=678d0c7a&is=678bbafa&hm=bb7bf5255dbd43905abd8bbdf4ab4d4ceba0a7e21345f9d86fd7c21386841a62'); }
+        }
+
+        body {
+            animation: backgroundChange 15s infinite;
+        }
+
+        /* Модальное окно */
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный фон */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="hamburger" onclick="togglePanel()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+
+    <a class="link" href="https://store.steampowered.com/app/252490/Rust/" target="_blank">Ссылка на игру в Steam</a>
+    <button class="language-switch" onclick="switchLanguage()">EN</button>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <div id="sidePanel" class="side-panel">
-        <a href="javascript:void(0)" class="closebtn" onclick="togglePanel()">&times;</a>
-        <a href="#about">О игре</a>
-        <a href="#gameplay">Геймплей</a>
-        <a href="#resources">Ресурсы</a>
-        <a href="#crafting">Крафтинг</a>
-        <a href="#buildings">Строительство</a>
-        <a href="#tips">Советы</a>
-        <a href="#faq">Часто задаваемые вопросы</a>
+
+    <div class="menu" id="menu">
+        <a href="https://twitter.com/playrust" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/playrust" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/playrust" target="_blank">Instagram</a>
+        <a href="https://www.reddit.com/r/playrust/" target="_blank">Reddit</a>
     </div>
-    <header>
-        <h1>Добро пожаловать в Вики по игре Rust</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">О игре</a></li>
-                <li><a href="#gameplay">Геймплей</a></li>
-                <li><a href="#resources">Ресурсы</a></li>
-                <li><a href="#crafting">Крафтинг</a></li>
-                <li><a href="#buildings">Строительство</a></li>
-                <li><a href="#tips">Советы</a></li>
-                <li><a href="#faq">Часто задаваемые вопросы</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-content">
-        <section id="about" class="container">
-            <h2>О игре</h2>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1329516092191670292/image.png?ex=678c9a19&is=678b4899&hm=446f26cbb5bc241c7f256d3f2810229e62c6c005ab6fbc73f92f08b0644c274a&" alt="Скриншот геймплея Rust">
-            </div>
-            <p>Rust - многопользовательская онлайн-игра на выживание от компании Facepunch Studios. Игроки должны выжить в дикой природе, используя
-               свои навыки и ресурсы. Игра сочетает в себе элементы строительства, крафтинга и PvP-сражений.</p>
-            <p>Главным элементом игры является реальное взаимодействие между игроками, которое может включать как сотрудничество в группах и совместную
-               постройку укреплений, так и враждебность, рейдерство и битвы за ресурсы. Все эти элементы создают уникальный и захватывающий геймплей,
-               который удерживает игроков на долгие часы.</p>
-        </section>
-        <section id="gameplay" class="container">
-            <h2>Геймплей</h2>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1328826537763672074/image.png?ex=678c1227&is=678ac0a7&hm=b0b379555250e86f9bda02c46af8e7568231317510ffbd90738f07276daff128&" alt="Бой в Rust">
-            </div>
-            <p>Rust предлагает игрокам динамичный геймплей, сочетающий элементы выживания, строительства и сражений. Игроки начинают с минимальным
-               набором инструментов и должны искать ресурсы, чтобы строить укрытия и изготавливать оружие.</p>
-            <h3>Пища и Вода</h3>
-            <p>Пища и вода жизненно необходимы для выживания. Игроки должны охотиться, собирать ягоды и искать источники воды, чтобы удовлетворить свои
-               базовые потребности. На острове Rust можно встретить различные виды животных, таких как олени, кабаны и волки. Охота на них позволит
-               собрать мясо, кожу и жир, необходимые для крафтинга и питания.</p>
-            <h3>Боевые действия</h3>
-            <p>Игроки могут сражаться с другими игроками или NPC, используя разнообразное оружие и ловушки. В PvP режимах важно уметь хорошо стрелять и прятаться.
-               В Rust есть множество видов оружия, от простых дубинок и луков до огнестрельного оружия, такого как пистолеты, автоматические винтовки и дробовики.
-               Создание и улучшение оружия является ключевым аспектом для выживания и защиты своих ресурсов.</p>
-            <h3>Сбор ресурсов</h3>
-            <p>Сбор ресурсов является важным элементом геймплея. Игроки могут добывать дерево, камень, металлы и другие материалы, необходимые для строительства
-               и изготовления предметов. Процесс добычи осуществляется с помощью различных инструментов, таких как топоры и кирки. Игроки также могут находить
-               ресурсы путём обыска разрушенных баз и заброшенных построек.</p>
-            <h3>Крафтинг</h3>
-            <p>Крафтинг - важная часть игры. В Rust существует обширная система крафтинга, позволяющая игрокам создавать невероятный ассортимент предметов,
-               начиная от простых орудий и заканчивая сложными механизмами. Игроки могут создавать всё: от оружия и брони до строительных материалов и мебели.</p>
-        </section>
-        <section id="resources" class="container">
-            <h2>Ресурсы</h2>
-            <p>В Rust существует множество ресурсов, которые игроки могут собирать и использовать для выживания и строительства. Вот некоторые из них:</p>
-            <ul>
-                <li><strong>Дерево:</strong> Основной ресурс, используемый для строительства и крафта.</li>
-                <li><strong>Камень:</strong> Используется для создания инструментов и строительства.</li>
-                <li><strong>Металлы:</strong> Включает в себя железо и серу, необходимые для создания более сложных предметов.</li>
-                <li><strong>Пища:</strong> Включает мясо, ягоды и другие съедобные предметы.</li>
-                <li><strong>Вода:</strong> Необходима для выживания, может быть найдена в реках и озерах.</li>
-            </ul>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330107353160486934/image.png?ex=678cc681&is=678b7501&hm=ca5d62c144172afdc84304546757225d31fb94db7de49041216da6fe148de1fb" alt="Ресурсы в Rust">
-            </div>
-        </section>
-        <section id="crafting" class="container">
-            <h2>Крафтинг</h2>
-            <p>Крафтинг в Rust позволяет игрокам создавать различные предметы, которые помогут им выжить в суровых условиях. Игроки могут создавать оружие, инструменты,
-               броню и даже строить свои базы. Система крафтинга очень обширна и требует от игроков собирать ресурсы и изучать рецепты.</p>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1275898985307181271/1330144274465161287/fP5L87x5POo.png?ex=678ce8e3&is=678b9763&hm=68d20332bb59687e0ac5a97139685666cf60e5fdca1a9b3870a28e8d60ffc482" alt="Крафтинг в Rust">
-            </div>
-            <p>Крафтинг включает в себя создание различных предметов, таких как инструменты, оружие и строительные материалы. Игроки могут комбинировать ресурсы для создания более сложных предметов, что позволяет им адаптироваться к различным условиям игры.</p>
-        </section>
-        <section id="buildings" class="container">
-            <h2>Строительство</h2>
-            <p>Строительство в Rust является ключевым элементом выживания. Игроки могут создавать свои базы, используя собранные ресурсы. Базы могут варьироваться от простых укрытий до сложных укреплений с защитными механизмами.</p>
-            <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/991402666892730490/1330149479927513122/Z.png?ex=678cedbc&is=678b9c3c&hm=82f53dab68ea141eeceaac13adc506ac3403c092ae4d3903c183b59d08fa179f" alt="Строительство в Rust">
-            </div>
-            <p>Игроки могут использовать различные материалы для строительства, включая дерево, камень и металл. Каждый материал имеет свои характеристики, влияющие на прочность и защиту построек.</p>
-        </section>
-        <section id="tips" class="container">
-            <h2>Советы</h2>
-            <p>Вот несколько советов для успешного выживания в Rust:</p>
-            <ul>
-                <li>Собирайте ресурсы постоянно, чтобы не остаться без необходимых материалов.</li>
-                <li>Стройте базу в безопасном месте, вдали от других игроков.</li>
-                <li>Используйте ловушки и защитные механизмы для защиты своей базы.</li>
-                <li>Сотрудничайте с другими игроками, чтобы увеличить шансы на выживание.</li>
-                <li>Изучайте рецепты крафта, чтобы создавать более мощные предметы.</li>
-            </ul>
-        </section>
-        <section id="faq" class="container">
-            <h2>Часто задаваемые вопросы</h2>
-            <p>Здесь вы найдете ответы на некоторые часто задаваемые вопросы о Rust:</p>
-            <ul>
-                <li><strong>Как начать играть в Rust?</strong> - Вам нужно скачать игру через Steam и создать аккаунт.</li>
-                <li><strong>Можно ли играть в Rust в одиночку?</strong> - Да, но игра в команде значительно упрощает выживание.</li>
-                <li><strong>Как защитить свою базу?</strong> - Используйте защитные механизмы и стройте укрепления из прочных материалов.</li>
-                <li><strong>Есть ли в игре кроссплатформенная игра?</strong> - Нет, Rust доступен только на PC, Xbox и PlayStation, но между ними нет кроссплатформенной игры.</li>
-                <li><strong>Как найти ресурсы?</strong> - Исследуйте карту, собирайте ресурсы с деревьев, камней и животных, а также обыскивайте заброшенные здания.</li>
-            </ul>
-        </section>
-    </main>
+
+    <div class="content">
+        <h1>Википедия о Rust</h1>
+        <img class="header-image" src="https://cdn.discordapp.com/attachments/1314225469419294780/1330183645377335357/latest.png?ex=678d0d8e&is=678bbc0e&hm=a69f4d791854a1c20fc613910b69fbc698ba963cfcd64acb7e310de395757f4a" alt="Rust Header">
+
+        <div class="category">
+            <h2><a href="https://rust.fandom.com/ru/wiki/%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE" target="_blank">Строительство</a></h2>
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1329516092191670292/image.png?ex=678c9a19&is=678b4899&hm=446f26cbb5bc241c7f256d3f2810229e62c6c005ab6fbc73f92f08b0644c274a" alt="Строительство 1">
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1328826537763672074/image.png?ex=678cbae7&is=678b6967&hm=290f765d65e8867aa5ea1b75e69eeabb22f85647188fcaf6aca95949ebb9a703" alt="Строительство 2">
+        </div>
+
+        <div class="category">
+            <h2><a href="https://rust.fandom.com/ru/wiki/%D0%9E%D1%80%D1%83%D0%B6%D0%B8%D0%B5" target="_blank">Оружие</a></h2>
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330187700963250317/image.png?ex=678d1155&is=678bbfd5&hm=0729775c7f59b92d6b966d2e547fd6ccf157973cf7995b447f6a6ba138cf4f94" alt="Оружие">
+        </div>
+
+        <div class="category">
+            <h2><a href="https://rust.fandom.com/ru/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D1%8B" target="_blank">Ресурсы и компоненты</a></h2>
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330107353160486934/image.png?ex=678cc681&is=678b7501&hm=ca5d62c144172afdc84304546757225d31fb94db7de49041216da6fe148de1fb" alt="Ресурсы">
+        </div>
+
+        <div class="category">
+            <h2>Рейд Хелпер</h2>
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1330189137264902206/A529CCA5C0B4F113FD3A45D53EC8BBA2EC8A3602.png?ex=678d12ac&is=678bc12c&hm=b7e25147e7d9832b67424d8008af506966c6dabd6326f9452ac13e9b756f5eaf" alt="Рейд Хелпер 2" onclick="openModal(this.src)">
+        </div>
+    </div>
+
+    <div class="dev-section">
+        <h3>Создатель сайта: Писька Грыз</h3>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
     <script>
-        function togglePanel() {
-            const panel = document.getElementById("sidePanel");
-            const nav = document.querySelector("nav ul");
-            if (panel.style.width === "250px") {
-                panel.style.width = "0";
-                nav.classList.remove("show");
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            hamburger.classList.toggle('active');
+        }
+
+        function switchLanguage() {
+            const currentLang = document.querySelector('.language-switch').innerText;
+            if (currentLang === 'EN') {
+                document.querySelector('.language-switch').innerText = 'RU';
+                document.querySelector('h1').innerText = 'Wikipedia about Rust';
+                document.querySelector('.link').innerText = 'Link to the game on Steam';
+                document.querySelectorAll('.category h2')[0].innerText = 'Building';
+                document.querySelectorAll('.category h2')[1].innerText = 'Weapons';
+                document.querySelectorAll('.category h2')[2].innerText = 'Resources and Components';
+                document.querySelectorAll('.category h2')[3].innerText = 'Raid Helper';
+                document.querySelector('.dev-section h3').innerText = 'Site Creator: Your Name';
             } else {
-                panel.style.width = "250px";
-                nav.classList.add("show");
+                document.querySelector('.language-switch').innerText = 'EN';
+                document.querySelector('h1').innerText = 'Википедия о Rust';
+                document.querySelector('.link').innerText = 'Ссылка на игру в Steam';
+                document.querySelectorAll('.category h2')[0].innerText = 'Строительство';
+                document.querySelectorAll('.category h2')[1].innerText = 'Оружие';
+                document.querySelectorAll('.category h2')[2].innerText = 'Ресурсы и компоненты';
+                document.querySelectorAll('.category h2')[3].innerText = 'Рейд Хелпер';
+                document.querySelector('.dev-section h3').innerText = 'Создатель сайта: Писька Грыз';
             }
         }
+
+        function openModal(src) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
     </script>
+
 </body>
 </html>
