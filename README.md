@@ -6,7 +6,8 @@
     <title>Rust – Вики о игре</title>
     <style>
         body {
-            background-color: #000;
+            background: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330120080213934090/1625629126_18-kartinkin-com-p-rast-zadnii-fon-krasivie-foni-18.png?ex=678cd25b&is=678b80db&hm=7b1b58d248ce46f3807c23a48221d9a735b2058a4567b60b43ee5faaa6ec4ca1') no-repeat center center fixed; 
+            background-size: cover;
             color: #fff;
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -15,7 +16,7 @@
         }
 
         header {
-            background-color: #222;
+            background-color: rgba(34, 34, 34, 0.9);
             color: #ff0000;
             padding: 1em 0;
             text-align: center;
@@ -40,6 +41,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 1em;
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         h1, h2 {
@@ -47,7 +49,7 @@
         }
 
         .image-container {
-            display: flex;
+            display: flex;  
             justify-content: center;
             margin: 1em 0;
             position: relative;
@@ -82,6 +84,7 @@
         </nav>
     </header>
     <main>
+        <!-- Content remains unchanged -->
         <section id="about" class="container">
             <h2>О игре</h2>
             <div class="image-container">
@@ -128,14 +131,3 @@
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f84379085d6d98c9faa3ebbf7814061fe8aba8a1516&" alt="Строительство в Rust">
             </div>
             <p>Постройка базы - один из важнейших аспектов игры Rust. Игроки могут строить укрытия, крепости и даже автоматизированные башни для защиты своей территории.</p>
-            <h3>Дома</h3>
-            <p>Игроки начинают с постройки небольших деревянных домов, которые со временем можно улучшать до каменных или металлических строений.</p>
-            <h3>Оборонительные сооружения</h3>
-            <p>Заборы, ловушки и автоматизированные турели - лишь часть арсенала для защиты базы от нападений.</p>
-        </section>
-        <section id="tips" class="container">
-            <h2>Советы для новичков</h2>
-            <ul>
-                <li>Сначала постройте небольшое укрытие, чтобы защитить себя от дикой природы и других игроков.</li>
-                <li>Используйте костры, чтобы готовить еду и поддерживать тепло в холодные ночи.</li>
-                <li>Собирайте ресурсы и укрепляйте свой дом
