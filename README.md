@@ -26,7 +26,7 @@ Rust для огрызков
         <section id="about">
             <h2>О игре</h2>
             <p>Rust - многопользовательская онлайн-игра на выживание от компании Facepunch Studios. Игроки должны выжить в дикой природе, собирая ресурсы, строя укрытия и сотрудничая или соперничая с другими игроками. Игра вышла в ранний доступ в 2013 году и быстро завоевала популярность своей жёсткой механикой выживания.</p>
-            <img src="https://rust.fandom.com/wiki/Rust?file=Rust_Gameplay.jpg" alt="Скриншот геймплея Rust">
+            <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1329516092191670292/image.png?ex=678c9a19&is=678b4899&hm=446f26cbb5bc241c7f256d3f2810229e62c6c005ab6fbc73f92f08b0644c274a&" alt="Скриншот геймплея Rust">
         </section>
         <section id="gameplay">
             <h2>Геймплей</h2>
