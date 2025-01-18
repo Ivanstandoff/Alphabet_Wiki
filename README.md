@@ -132,4 +132,4 @@
             <div class="image-container">
                 <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f84379085d6d98c9faa3ebbf7814061fe8aba8a1516&" alt="Строительство в Rust">
             </div>
-            <p>Постройка базы - один из важнейших аспектов игры Rust. Игроки могут строить укрытия, крепости и даже автоматизированные башни для[_{{{CITATION{{{_1{](https://github.com/Victem/web-progr/tree/58eb47efb72c8f0de4401627b76d12f695e0fa42/src%2Fcss%2FREADME.MD)
+            <p>Постройка базы - один из важнейших аспектов игры Rust. Игроки могут строить укрытия, крепости и даже крепости из средневековья 
