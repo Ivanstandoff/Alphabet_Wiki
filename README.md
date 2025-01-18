@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rust – Вики о игре</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <style>
         body {
-            background: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330120080213934090/1625629126_18-kartinkin-com-p-rast-zadnii-fon-krasivie-foni-18.png?ex=678cd25b&is=678b80db&hm=7b1b58d248ce46f3807c23a48221d9a735b2058a4567b60b43ee5faaa6ec4ca1') no-repeat center center fixed; 
+            background: url('https://cdn.discordapp.com/attachments/1314225469419294780/1330120080213934090/1625629126_18-kartinkin-com-p-rast-zadnii-fon-krasivie-foni-18.png?ex=678cd25b&is=678b80db&hm=7b1b58d248ce46f3807c23a48221d9a735b2058a4567b60b43ee5faaa6ec4ca1') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Fjalla One', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -46,6 +47,7 @@
 
         h1, h2 {
             color: #ff0000;
+            font-family: 'Fjalla One', Arial, sans-serif;
         }
 
         .image-container {
@@ -84,7 +86,6 @@
         </nav>
     </header>
     <main>
-        <!-- Content remains unchanged -->
         <section id="about" class="container">
             <h2>О игре</h2>
             <div class="image-container">
@@ -112,7 +113,7 @@
             <h3>Дерево</h3>
             <p>Дерево - это основной ресурс, используемый для строительства и крафтинга. Игроки могут рубить деревья или собирать палки.</p>
             <h3>Металлы</h3>
-            <p>Металлы, такие как железо и медь, используются для создания более прочных предметов и построек. Их можно добывать из рудников или собирать с помощью инструментов.</p>
+            <p>Металлы, такие как железо и медь, используются для создания более прочных предметов и построек. Их можно добывать из рудников или собирать с помощью инструментов</p>
         </section>
         <section id="crafting" class="container">
             <h2>Крафтинг</h2>
@@ -128,6 +129,4 @@
         <section id="buildings" class="container">
             <h2>Строительство</h2>
             <div class="image-container">
-                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f84379085d6d98c9faa3ebbf7814061fe8aba8a1516&" alt="Строительство в Rust">
-            </div>
-            <p>Постройка базы - один из важнейших аспектов игры Rust. Игроки могут строить укрытия, крепости и даже автоматизированные башни для защиты своей территории.</p>
+                <img src="https://cdn.discordapp.com/attachments/1314225469419294780/1326637002375823431/image.png?ex=678cacbd&is=678b5b3d&hm=8a8b81c549b57a697de88f
