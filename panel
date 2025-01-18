@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Panel Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Гамбургер-кнопка */
+        .hamburger {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+        }
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: black;
+            margin: 4px 0;
+        }
+        /* Боковая панель */
+        .side-panel {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        .side-panel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .side-panel a:hover {
+            color: #f1f1f1;
+        }
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+  <!-- Гамбургер-кнопка -->
+  <div class="hamburger" onclick="togglePanel()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- Боковая панель -->
+  <div id="sidePanel" class="side-panel">
+    <a href="javascript:void(0)" class="closebtn" onclick="togglePanel()">&times;</a>
+    <a href="#">Проект 1</a>
+    <a href="#">Проект 2</a>
+    <a href="#">Проект 3</a>
+  </div>
+
+  <script>
+    function togglePanel() {
+        var panel = document.getElementById("sidePanel");
+        if (panel.style.width === "0px" || panel.style.width === "") {
+            panel.style.width = "250px";
+        } else {
+            panel.style.width = "0";
+        }
+    }
+  </script>
+</body>
+</html>
